@@ -47,43 +47,6 @@ streamlit run app.py
 - Wrap in a FastAPI app and deploy to Vercel
 - Or use Streamlit Cloud — it's cleaner for demos
 
-## Israeli Tech Philosophy Applied
-
-- **Chutzpah:** Enter the room as if the problem is already solved
-- **Tachles:** Every feature solves a real, specific business problem
-- **Unit 8200 mindset:** Map the enemy architecture → strike the vulnerability
-- **Zero-to-One:** Built in 48h. No budget. Production-ready.
-
-## What Is and Is NOT AI
-
-**✅ Real AI/ML:**
-- RandomForest Classifier (scikit-learn) — genuine ML model
-- SHAP TreeExplainer — real mathematical Shapley values
-- Transfer learning logic — real similarity scoring
-
-**📌 Honest disclaimers:**
-- Data is synthetic (representative, not real HiPay data)
-- In production: replace synthetic data with Sentinel + real transaction feeds
-- 12-month projections are illustrative simulations, not model predictions
-
-## The Email to Anas
-
-```
-Bonjour Anas,
-
-J'ai construit en 48h la solution aux 3 problèmes principaux
-de migration marchands chez HiPay :
-- Token vault agnostique (zéro re-saisie client)
-- Cold start solver via transfer learning (Sentinel opérationnel J+1)
-- Explainabilité SHAP conforme EU AI Act Article 6 & 13
-
-Demo live : [votre-lien.streamlit.app]
-
-Je suis disponible jeudi ou vendredi matin.
-
-Samuel
-```
-
 ## Built By
 
 **Samuel Louissaint** — AI Founder & Technical Product Manager
