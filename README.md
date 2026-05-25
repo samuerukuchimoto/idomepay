@@ -1,5 +1,3 @@
-![Project Banner](YOUR_IMAGE_URL_HERE)
-
 # 🛡️ IdomePay
 ### Merchant Migration Intelligence Platform
 **Built in 48h · Zero Budget · EU AI Act Compliant · API-Agnostic**
