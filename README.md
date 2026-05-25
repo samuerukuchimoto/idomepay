@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7628afc8-c379-409f-9e56-583475db3d4f" />
+![Project Banner](YOUR_IMAGE_URL_HERE)
 
 # 🛡️ IdomePay
 ### Merchant Migration Intelligence Platform
