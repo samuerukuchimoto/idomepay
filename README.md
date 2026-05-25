@@ -1,3 +1,5 @@
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7628afc8-c379-409f-9e56-583475db3d4f" />
+
 # 🛡️ IdomePay
 ### Merchant Migration Intelligence Platform
 **Built in 48h · Zero Budget · EU AI Act Compliant · API-Agnostic**
