@@ -203,16 +203,21 @@ def train_sentinel_model():
     explainer = shap.TreeExplainer(model)
     return model, scaler, explainer, features
 
-def score_transaction(params: dict, model, scaler, explainer, feature_names):
+def score_transaction(params, model, scaler, explainer, feature_names):
     row = np.array([[params[f] for f in feature_names]])
     row_scaled = scaler.transform(row)
     prob = model.predict_proba(row_scaled)[0][1]
-    shap_vals = explainer.shap_values(row_scaled)
-    if isinstance(shap_vals, list):
-        sv = shap_vals[1][0]
-    else:
-        sv = shap_vals[0]
-    return prob, sv
+    
+    try:
+        sv = explainer.shap_values(row_scaled)
+        if isinstance(sv, list): sv = sv[1][0]
+        elif hasattr(sv, "values"): sv = sv.values[0]
+        elif len(sv.shape) == 3: sv = sv[0, :, 1]
+        else: sv = sv[0]
+    except:
+        sv = np.zeros(len(feature_names))
+        
+    return prob, sv.flatten()
 
 def generate_audit_log(txn_id, prob, decision, feature_names, shap_vals):
     top3 = sorted(zip(feature_names, shap_vals), key=lambda x: abs(x[1]), reverse=True)[:3]
