@@ -2,6 +2,8 @@
 ### Merchant Migration Intelligence Platform
 **Built in 48h · Zero Budget · EU AI Act Compliant · API-Agnostic**
 
+**[🚀 Try it live →](https://idomepay.streamlit.app)**
+
 ---
 
 ## What It Solves
